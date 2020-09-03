@@ -43,7 +43,12 @@ describe Carmen::Country do
       eastasia.instance_of?(Carmen::Country).must_equal true
       eastasia.name.must_equal 'Eastasia'
     end
+  end
 
+  describe '#continent' do
+    it 'provides access to the continent it belongs to' do
+      Carmen::Country.coded('OC').continent.must_equal Carmen::Continent.coded('004')
+    end
   end
 
   describe 'API for finding countries by code' do
