@@ -106,11 +106,11 @@ Some subregions may contain additional subregions. An example of this is Spain:
 
 If you need structural data about the continents. You can start here:
 
-    Carmen::World.continents
+    Carmen::World.instance.continents
 
 This will return a `Carmen::Continent` that you can use like this:
 
-    continent = Carmen::World.continents.first
+    continent = Carmen::World.instance.continents.first
     sub_continents = continent.sub_continents
 
 To get the sub-continents of a given continent. Might be empty.
