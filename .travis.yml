@@ -1,7 +1,6 @@
 rvm:
-  - 2.4.0
-  - 2.5.0
   - 2.6.0
+  - 2.7.0
   - ruby-head
 before_install:
   - gem install bundler

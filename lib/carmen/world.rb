@@ -17,6 +17,14 @@ module Carmen
       Country
     end
 
+    def continents
+      Continent.world.sub_continents
+    end
+
+    def countries
+      Continent.world.countries
+    end
+
     def path
       'world'
     end
@@ -24,6 +32,5 @@ module Carmen
     def inspect
       "<##{self.class}>"
     end
-
   end
 end
